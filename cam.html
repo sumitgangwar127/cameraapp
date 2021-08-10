@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Document</title>
+   <link rel="stylesheet" href="camstyle.css">
+   
+ </head>
+ <body>
+  <div class="video-container">
+    <!-- we use transform scale 1 to zoom in  so that we can use this styling in js -->
+    <video autoplay style="transform:scale(1);"></video>
+  </div>
+  <!-- span to make it show rec nd image capturing going on -->
+   <button id="record"><span></span></button>
+   <button id="capture" ><span></span></button>
+   <button id="gallery">Gallery</button>
+  
+   <div class="zoom">
+    <div class="in">+</div>
+    <div class="out">-</div>
+   </div>
+
+   <div class="filters">
+     <div class="filter" style="background-color: #fab0a055;"></div>
+     <div class="filter"  style="background-color: #a29bfe4b;"></div>
+     <div class="filter"></div>
+   </div>
+   
+  <script src="indexdb.js"></script>
+   <script src="camscript.js"></script>
+ </body>
+</html>
